@@ -45,13 +45,15 @@ Calculate mean and median total number of steps taken per day
 ```{r}
 mean(spd[, 2])
 ```
-[1] 10766
-
+```{r}
+10766
+```
 ```{r}
 median(spd[, 2])
 ```
-[1] 10765
-
+```{r}
+10765
+```
 
 ## What is the average daily activity pattern?
 
@@ -72,7 +74,7 @@ Find out, which 5-minute interval, on average across all the days in the dataset
 spi[spi[, 2] == max(spi[, 2]), ]
 ```
 ```{r}
-interval    steps
+    interval    steps
 104      835 206.1698
 ```
 
@@ -82,7 +84,9 @@ Calculate and report the total number of missing values in the dataset
 ```{r}
 sum(is.na(x[, 1]))
 ```
-[1] 2304
+```{r}
+2304
+```
 
 Create vector "ifmv" with length of number of missing values in x
 ```{r}
@@ -120,12 +124,16 @@ Calculate mean and median total number of steps taken per day
 ```{r}
 mean(spdn[, 2])
 ```
-[1] 10766
-
+```{r}
+10766
+```
 ```{r}
 median(spdn[, 2])
 ```
-[1] 10766
+```{r}
+10766
+```
+
 
 ## Are there differences in activity patterns between weekdays and weekends?
 Create a new factor variable "WD" in the dataset with two levels
