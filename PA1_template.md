@@ -44,8 +44,13 @@ hist(spd[, 2], xlab = "Steps per Day",
 Calculate mean and median total number of steps taken per day
 ```{r}
 mean(spd[, 2])
+```
+[1] 10766
+
+```{r}
 median(spd[, 2])
 ```
+[1] 10765
 
 
 ## What is the average daily activity pattern?
@@ -66,6 +71,8 @@ Find out, which 5-minute interval, on average across all the days in the dataset
 ```{r}
 spi[spi[, 2] == max(spi[, 2]), ]
 ```
+    interval    steps
+104      835 206.1698
 
 
 ## Imputing missing values
@@ -74,6 +81,7 @@ Calculate and report the total number of missing values in the dataset
 ```{r}
 sum(is.na(x[, 1]))
 ```
+[1] 2304
 
 Create vector "ifmv" with length of number of missing values in x
 ```{r}
@@ -110,9 +118,13 @@ hist(spdn[, 2], xlab = "Steps per Day",
 Calculate mean and median total number of steps taken per day
 ```{r}
 mean(spdn[, 2])
+```
+[1] 10766
+
+```{r}
 median(spdn[, 2])
 ```
-
+[1] 10766
 
 ## Are there differences in activity patterns between weekdays and weekends?
 Create a new factor variable "WD" in the dataset with two levels
