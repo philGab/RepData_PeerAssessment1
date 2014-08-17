@@ -71,9 +71,10 @@ Find out, which 5-minute interval, on average across all the days in the dataset
 ```{r}
 spi[spi[, 2] == max(spi[, 2]), ]
 ```
-    interval    steps
+```{r}
+interval    steps
 104      835 206.1698
-
+```
 
 ## Imputing missing values
 
